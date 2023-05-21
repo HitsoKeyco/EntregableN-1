@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    
+
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 25px;
+
+
+}
+
+:root {
+    --textCard: black;
+    --textTitle: rgb(243, 239, 239);
+    --bgButton:  rgb(212, 239, 250);
+    --textButton: rgb(100, 93, 93);
+    --borderButtonColor: rgb(248, 248, 248);
+    --textActiveButton:  rgb(141, 141, 141);
+    --hoverBgButton:  rgba(255, 255, 255, 0.466);
+
+}
+
+.title {
+  font-size: 8vw;
+  text-align: center;
+  color: var(--textTitle);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+  padding-bottom: 25px;
+
+  
+  
+  color: white;
+
+
+  
+}
+
+button {
+  cursor: pointer;
+  width: 40vw;
+  height: 3vh;
+  
+  border-radius: 3vw;
+  background-color:var(--bgButton);
+  border: 1vw solid var(--borderButtonColor);
+  color: var(--textButton);
+  font-weight: 700;
+  font-size: 3vw;
+  
+}
+
+button:hover {
+  background-color: var(--hoverBgButton);
+  /* font-size: 2vw;
+  padding: 9px;*/
+  border: 5px dashed var(--borderButtonColor); 
+  
+}
+
+button:active {
+  color: var(--textActiveButton);
+  font-size: 1em;
+  
+}
+
+
+
+.buttonClass{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 25px;
+}
+
+.img_contain{
+  max-width: 700px;
+
+  position: relative;
+}
+
+.phraseRandom{
+  
+  width: 90%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: 0;
+  margin: auto;
+  
+  height: fit-content;
+  
+  font-size: 2vw;
+}
+
+.img_rectangle{
+  width: 100%;
+
+}
+
+.phraseAutor{
+  position: absolute;
+  left: 5%;
+  bottom: 30%;  
+  font-size: 2vw;
+}
+
+@media (min-width:300px) {
+  button {
+    
+    width: 40vw;
+    height: 6vh;
+    
+    border-radius: 10px;
+    
+    border: 5px solid var(--borderButtonColor);
+    color: var(--textButton);
+    
+    font-size: 2.6vw;
+    
+  }
+
+  .phraseRandom{
+  
+    font-size: 3vw;
+    top: -30px;
+  }
+
+  .phraseAutor{
+    left: 5%;
+    bottom: 30%;  
+    font-size: 2vw;
+  }
+
+}
+
+@media (min-width:700px) {
+
+  .phraseRandom{
+  
+  font-size: 1.5em;
+  top: -60px;
+  }
+
+  button {
+    
+    width: 250px;
+    height: 60px;
+    
+    border-radius: 10px;
+    
+    border: 5px solid var(--borderButtonColor);
+    color: var(--textButton);
+    
+    font-size: 1.3em;
+    
+  }
+
+  .title{
+    font-size: 4em;
+    padding-bottom: 80px;
+  }
+
+  .phraseAutor{
+   
+    font-size: 1.2em;
+  }
+  
+
+
+
+
+}
