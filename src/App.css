@@ -43,7 +43,7 @@
   font-size: 8vw;
   text-align: center;
   color: var(--textTitle);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
 
 
   padding-bottom: 25px;
@@ -72,8 +72,6 @@ button {
 
 button:hover {
   background-color: var(--hoverBgButton);
-  /* font-size: 2vw;
-  padding: 9px;*/
   border: 5px dashed var(--borderButtonColor); 
   
 }
@@ -161,7 +159,7 @@ button:active {
   .phraseRandom{
   
   font-size: 1.5em;
-  top: -60px;
+  top: 0px;
   }
 
   button {
@@ -184,8 +182,8 @@ button:active {
   }
 
   .phraseAutor{
-   
     font-size: 1.2em;
+    bottom: 70px;
   }
   
 
